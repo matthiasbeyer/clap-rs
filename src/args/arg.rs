@@ -1860,7 +1860,7 @@ impl<'a, 'b> Arg<'a, 'b> {
     ///
     /// **NOTE:** The error message does *not* need to contain the `error:` portion, only the
     /// message.
-    pub fn with_validator(mut self, validator: Box<Validator> -> Self {
+    pub fn with_validator(mut self, validator: Box<Validator>) -> Self {
         self.validators.push(validator);
         self
     }
